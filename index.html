@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanovia - Révolutionnez la gestion de vos rendez-vous médicaux et de vos patients. Bientôt disponible.">
+    <meta name="keywords" content="santé, médical, rendez-vous, patients, gestion, startup">
+    <title>Sanovia - Bientôt Disponible</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <img src="Sanovia.png" alt="Sanovia Logo" class="logo-img">
+                </div>
+                <div class="navbar-right">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@sanovia.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 514 887 2107</span>
+                        </div>
+                    </div>
+                    <button class="btn-notify">
+                        <i class="fas fa-bell"></i>
+                        <span>Me notifier</span>
+                    </button>
+                    <button class="hamburger-btn" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Contact Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-contact-menu" id="mobileContactMenu">
+        <div class="mobile-menu-header">
+            <h3 class="mobile-menu-title">Contact</h3>
+            <button class="mobile-close-btn" id="mobileCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-contact-list">
+            <div class="mobile-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>contact@sanovia.com</span>
+            </div>
+            <div class="mobile-contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+1 514 887 2107</span>
+            </div>
+            <div class="mobile-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Montréal, QC</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Révolutionnez la <span class="highlight">gestion médicale</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Simplifiez vos rendez-vous médicaux et optimisez la gestion de vos patients avec Sanovia. 
+                            La solution tout-en-un pour les professionnels de santé.
+                        </p>
+                        
+                        <!-- Countdown Timer -->
+                        <div class="countdown">
+                            <h3>Lancement dans :</h3>
+                            <div class="countdown-timer">
+                                <div class="time-unit">
+                                    <span id="days">00</span>
+                                    <label>Jours</label>
+                                </div>
+                                <div class="time-unit">
+                                    <span id="hours">00</span>
+                                    <label>Heures</label>
+                                </div>
+                                <div class="time-unit">
+                                    <span id="minutes">00</span>
+                                    <label>Minutes</label>
+                                </div>
+                                <div class="time-unit">
+                                    <span id="seconds">00</span>
+                                    <label>Secondes</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Signup -->
+                        <div class="email-signup">
+                            <h3>Soyez les premiers informés</h3>
+                            <form class="signup-form" id="emailForm">
+                                <div class="input-group">
+                                    <input type="email" id="email" placeholder="Votre adresse e-mail" required>
+                                    <button type="submit" class="btn-primary">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <p class="privacy-text">
+                                    En vous inscrivant, vous acceptez de recevoir nos actualités. 
+                                    Vos données sont protégées.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="mockup-container">
+                            <div class="mockup-screen">
+                                <div class="mockup-header">
+                                    <div class="mockup-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="medical-icon">
+                                        <img src="Sanovia-logo.png" alt="Sanovia Logo" class="logo-mockup">
+                                    </div>
+                                    <h4>Dashboard Médical</h4>
+                                    <div class="feature-list">
+                                        <div class="feature-item">
+                                            <i class="fas fa-calendar-check"></i>
+                                            <span>Rendez-vous</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-users"></i>
+                                            <span>Patients</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-chart-line"></i>
+                                            <span>Statistiques</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Preview -->
+        <section class="features-preview">
+            <div class="container">
+                <h2>Ce qui vous attend</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Gestion des rendez-vous</h3>
+                        <p>Planifiez, modifiez et suivez tous vos rendez-vous médicaux en un seul endroit.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Dossiers patients</h3>
+                        <p>Accédez rapidement aux informations complètes de vos patients de manière sécurisée.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Application mobile</h3>
+                        <p>Restez connecté où que vous soyez avec notre application mobile intuitive.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Sécurité avancée</h3>
+                        <p>Vos données médicales sont protégées par les plus hauts standards de sécurité.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="social-proof">
+            <div class="container">
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">Professionnels intéressés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Cliniques partenaires</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">Heures d'économie/semaine</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">
+                        <img src="Sanovia.png" alt="Sanovia Logo" class="logo-img">
+                    </div>
+                    <p>Révolutionnons ensemble la gestion médicale</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <p>&copy; 2024 Sanovia. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Merci !</h3>
+            </div>
+            <p>Votre inscription a été prise en compte. Vous serez informé dès le lancement de Sanovia.</p>
+            <button class="btn-secondary" onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
