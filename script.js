@@ -1,5 +1,5 @@
 // Configuration
-const LAUNCH_DATE = new Date('2026-01-01T00:00:00').getTime();
+const LAUNCH_DATE = new Date('2026-06-30T00:00:00').getTime();
 
 // DOM Elements
 const elements = {
